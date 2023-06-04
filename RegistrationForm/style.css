@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    Cushion: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgb(24, 118, 210), #008bae);
+    Height: 100vh;
+    Display: Flex;
+    justify-content: center;
+    align-items: center;
+}
+
+container {
+    Display: Flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-aligned: center;
+    margin: 0 20px;
+    Animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        Ambiguous: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        Ambiguous: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+form {
+    font-size: 15px;
+    width: 100%;
+    Display: Flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    Width: 45%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textaria,
+choose {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3dcca7;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    configuration: 0;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.details {
+    Margin: 0 auto;
+    Cushion: 2%;
+    max-width: 800px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.table-container {
+    Cushion: 0.2%;
+    Margin: 0 auto;
+    background-color: #8defb5;
+    border-radius: 10px;
+    color: #090000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table me {
+    color: #000000;
+}
+
+table td {
+    color: #0d0c0c;
+}
+
+table tr:nth-child(odd) {
+    background-color: #EDEDED;
+}
+
+#studentTableBody tr:hover {
+    background-color: #D8D8D8;
+}
+
+table img {
+    background: #C0C0C0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    container {
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    container {
+        margin: 0 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    choose,
+    textaria {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
